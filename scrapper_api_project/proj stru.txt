@@ -1,0 +1,10 @@
+scapper_api_project
+venv
+    Include
+    Lib
+    Scripts
+    pyvenv.cfg
+app.py
+books2scrape.py
+jsonRest.py
+quotes2scrape.py
