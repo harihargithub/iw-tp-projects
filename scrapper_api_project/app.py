@@ -2,7 +2,9 @@
 
 from flask import Flask, jsonify
 from books2scrape import scrape_data as scrape_books
-from quotes2scrape import scrape_data as scrape_quotes
+from quotes2scrape2 import scrape_data as scrape_quotes
+from indigoScrape import scrape_data as scrape_indigo
+from aiScrape import scrape_ai as scrape_ai
 from jsonRest import fetch_json_data
 
 app = Flask(__name__)
@@ -36,6 +38,20 @@ def get_books():
 def get_quotes():
     print("Endpoint /scrape/quotes called")
     data = scrape_quotes()
+    return jsonify(data)
+
+
+@app.route("/indigo/search", methods=["GET"])
+def get_indigo_flights():
+    print("Endpoint /indigo/search called")
+    data = scrape_indigo()
+    return jsonify(data)
+
+
+@app.route("/ai/search", methods=["GET"])
+def get_ai_flights():
+    print("Endpoint /ai/search called")
+    data = scrape_ai()
     return jsonify(data)
 
 

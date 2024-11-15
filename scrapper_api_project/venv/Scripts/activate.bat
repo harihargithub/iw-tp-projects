@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\nhari\OneDrive\Documents\iw tp projects\scraper_api_project\venv
+set VIRTUAL_ENV=C:\Users\nhari\OneDrive\Documents\iw tp projects\scrapper_api_project\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

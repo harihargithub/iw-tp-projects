@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\nhari\OneDrive\Documents\iw tp projects\scraper_api_project\venv"
+VIRTUAL_ENV="C:\Users\nhari\OneDrive\Documents\iw tp projects\scrapper_api_project\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
